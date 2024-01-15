@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 3px solid skyblue;
+            text-align: center;
+            /* block 요소의 가운데 정렬 : 너비주고 margin지정 */
+            width: 700px;
+            margin: 0 auto;
+        }
+        .main p{
+            font-size: 30px;
+        }
+        .main span::first-letter{
+            font-size: 50px;
+        }
+        .main .ri::first-letter{
+            font-style: oblique;
+        }
+        .main .red::first-letter{
+            color: red;
+        }
+        .main .blue::first-letter{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <p class="red">우리나라 좋은나라</p>
+        <p class="blue ri">우리나라 좋은나라</p>
+        <p class="blue">우리나라 좋은나라</p>
+        <p class="red ri">우리나라 좋은나라</p>
+    </div>
+</body>
+</html>

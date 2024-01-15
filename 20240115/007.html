@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-sizing 속성</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .content-box{
+            padding: 20px;
+        }
+        .border-box{
+            padding: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- 기본값은 content-box -->
+    <div class="content-box">
+        C
+    </div>
+    <!-- boder-box는 padding과 border,margin등을 고려한다 -->
+    <div class="border-box">
+        B
+    </div>
+</body>
+</html>
