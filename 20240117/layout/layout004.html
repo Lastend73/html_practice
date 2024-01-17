@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 전체선택자(우선순위 0) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav li {
+            list-style: none;
+            float: left;
+            width: 100px;
+            background-color: skyblue;
+            margin-right: 3px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+        }
+        nav li:hover{
+            background-color: blue;
+            color: white;
+            cursor: pointer;
+        }
+        nav ul{
+            overflow: hidden;
+        }
+        #app{
+            width: 600px;
+            margin: 0 auto;
+        }
+        header{
+            background-color: violet;
+            height: 50px;
+        }
+        aside{
+            background-color: red;
+            width: 100px;
+            height: 200px;
+        }
+        main{
+            overflow: hidden;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        section{
+            min-height: 600px;
+            background-color: lightgray;
+            width: 400px;
+            float: left;
+        }
+        footer{
+            height: 50px;
+            background-color: blue;
+            color: wheat;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <header>해더</header>
+        <nav>
+            <ul>
+                <li>홈</li>
+                <li>로그인</li>
+                <li>소게</li>
+                <li>인사말</li>
+            </ul>
+        </nav>
+        <main>
+            <aside class="left">광고</aside>
+            <section>본문</section>
+            <aside class="right">광고</aside>
+        </main>
+        <footer>
+            ㅎㅇ
+        </footer>
+    </div>
+</body>
+
+</html>
